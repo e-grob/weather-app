@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cc2a6fa9e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto weather-app border">
+      <form class="search-form">
+        <div class="input-group mb-3">
+          <i class="fas fa-search"></i>
+          <input
+            type="search"
+            class="form-control city-search"
+            placeholder="Enter City Here"
+          />
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </div>
+      </form>
+      <div class="todays-weather">
+        <h1 class="city-title">Tel Aviv</h1>
+        <h1 class="temperature current-temp">81</h1>
+        <span id="units">°F</span>
+        <!-- <div class="description">
+          <span class="descriptor">Sunny</span>
+          <span class="windspeed">Wind: 8km/h</span>
+          <span class="precipitation">Precipitation: 0%</span>
+          <span class="humidity">Humidity: 80%</span>
+        </div> -->
+        <p class="hi-lo-temp">
+          H: <span class="temperature hi-temp" id="current-hi-temp">83</span>°
+          L: <span class="temperature low-temp" id="current-low-temp">75</span>°
+        </p>
+      </div>
+      <div class="seven-day-forecast">
+        <div class="row sunday">
+          <div class="col-4 day">Sunday</div>
+          <div class="col-4 weather-emoji">☀️</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">84</span>° / 75°
+          </div>
+        </div>
+        <hr />
+        <div class="row monday">
+          <div class="col-4 day">Monday</div>
+          <div class="col-4 weather-emoji">🌤</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">86</span>° / 75°
+          </div>
+        </div>
+        <hr />
+
+        <div class="row tuesday">
+          <div class="col-4 day">Tuesday</div>
+          <div class="col-4 weather-emoji">☀️</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">88</span>° / 73°
+          </div>
+        </div>
+        <hr />
+
+        <div class="row wednesday">
+          <div class="col-4 day">Wednesday</div>
+          <div class="col-4 weather-emoji">☀️</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">86</span>° / 73°
+          </div>
+        </div>
+        <hr />
+
+        <div class="row thursday">
+          <div class="col-4 day">Thursday</div>
+          <div class="col-4 weather-emoji">☀️</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">84</span>° / 73°
+          </div>
+        </div>
+        <hr />
+
+        <div class="row friday">
+          <div class="col-4 day">Friday</div>
+          <div class="col-4 weather-emoji">🌤</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">86</span>° / 72°
+          </div>
+        </div>
+        <hr />
+
+        <div class="row saturday">
+          <div class="col-4 day">Saturday</div>
+          <div class="col-4 weather-emoji">☀️</div>
+          <div class="col-4 temperature hi-lo-temp">
+            <span class="hi-temp">88</span>° / 75°
+          </div>
+        </div>
+      </div>
+      <div class="temp-unit">
+        <button type="button" class="btn btn-outline-warning unit-button">
+          <b>C°/ F°</b>
+        </button>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
