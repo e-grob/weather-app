@@ -59,3 +59,8 @@ x .fa-search {
   cursor: pointer;
   color: white;
 }
+.caption {
+  font-size: 12px;
+  position: relative;
+  bottom: -90px;
+}
