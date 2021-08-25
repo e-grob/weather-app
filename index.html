@@ -32,82 +32,35 @@
           <button class="btn btn-outline-primary" type="submit">Search</button>
         </div>
       </form>
-      <div class="todays-weather">
+
+      <div class="weather-forecast">
         <h1 class="city-title">Tel Aviv</h1>
-        <h1 class="temperature current-temp">81</h1>
-        <span id="units">°F</span>
-        <!-- <div class="description">
-          <span class="descriptor">Sunny</span>
-          <span class="windspeed">Wind: 8km/h</span>
-          <span class="precipitation">Precipitation: 0%</span>
-          <span class="humidity">Humidity: 80%</span>
-        </div> -->
-        <p class="hi-lo-temp">
-          H: <span class="temperature hi-temp" id="current-hi-temp">83</span>°
-          L: <span class="temperature low-temp" id="current-low-temp">75</span>°
-        </p>
+        <div class="current-weather-forecast">
+          <h1 class="temperature current-temp">81</h1>
+          <span id="units">°F</span>
+          <span class="current-temp current-temp-emoji">☀️</span>
+          <p class="hi-lo-temp">
+            <span class="temperature hi-temp" id="current-hi-temp">83</span>°/
+            <span class="temperature low-temp" id="current-low-temp">75</span>°
+          </p>
+        </div>
+        <div class="current-weather-description">
+          <div class="descriptor">Sunny</div>
+          <div class="windspeed">Wind: 8km/h</div>
+          <div class="precipitation">Precipitation: 0%</div>
+          <div class="humidity">Humidity: 80%</div>
+        </div>
       </div>
+
       <div class="seven-day-forecast">
-        <div class="row sunday">
+        <div class="row day-of-week">
           <div class="col-4 day">Sunday</div>
           <div class="col-4 weather-emoji">☀️</div>
           <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">84</span>° / 75°
+            <span class="hi-temp">84</span>° / <span class="low-temp">75</span>°
           </div>
         </div>
         <hr />
-        <div class="row monday">
-          <div class="col-4 day">Monday</div>
-          <div class="col-4 weather-emoji">🌤</div>
-          <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">86</span>° / 75°
-          </div>
-        </div>
-        <hr />
-
-        <div class="row tuesday">
-          <div class="col-4 day">Tuesday</div>
-          <div class="col-4 weather-emoji">☀️</div>
-          <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">88</span>° / 73°
-          </div>
-        </div>
-        <hr />
-
-        <div class="row wednesday">
-          <div class="col-4 day">Wednesday</div>
-          <div class="col-4 weather-emoji">☀️</div>
-          <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">86</span>° / 73°
-          </div>
-        </div>
-        <hr />
-
-        <div class="row thursday">
-          <div class="col-4 day">Thursday</div>
-          <div class="col-4 weather-emoji">☀️</div>
-          <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">84</span>° / 73°
-          </div>
-        </div>
-        <hr />
-
-        <div class="row friday">
-          <div class="col-4 day">Friday</div>
-          <div class="col-4 weather-emoji">🌤</div>
-          <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">86</span>° / 72°
-          </div>
-        </div>
-        <hr />
-
-        <div class="row saturday">
-          <div class="col-4 day">Saturday</div>
-          <div class="col-4 weather-emoji">☀️</div>
-          <div class="col-4 temperature hi-lo-temp">
-            <span class="hi-temp">88</span>° / 75°
-          </div>
-        </div>
       </div>
       <small class="caption">
         <a href="https://github.com/e-grob/weather-app" target="_blank"

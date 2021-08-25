@@ -5,12 +5,16 @@ body {
   margin: 30px 0;
   padding: 30px;
 }
-x .fa-search {
-  padding-right: 7px;
+.fa-search {
+  padding-right: 10px;
   font-size: xx-large;
 }
+.weather-forecast {
+  text-align: center;
+  padding: 60px 20px;
+}
 .city-title {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 400;
   margin-bottom: -5px;
 }
@@ -18,9 +22,20 @@ x .fa-search {
   font-size: 12px;
   padding-top: 3px;
 }
-.todays-weather {
+.date-time,
+.low-temp {
+  font-weight: 250;
+}
+.current-weather-forecast {
+  display: inline-block;
   text-align: center;
-  padding: 30px 0 50px;
+  padding: 5px 40px 40px;
+}
+.current-weather-description {
+  display: inline-block;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.3em;
 }
 .current-temp {
   display: inline;
@@ -30,11 +45,6 @@ x .fa-search {
 #units {
   position: relative;
   top: -24px;
-}
-.description span {
-  display: block;
-  margin: 0 auto;
-  line-height: 1.2em;
 }
 .seven-day-forecast {
   font-size: 15px;
@@ -46,7 +56,7 @@ x .fa-search {
 }
 
 .hi-temp {
-  font-weight: 600;
+  font-weight: 550;
 }
 
 .temp-unit {

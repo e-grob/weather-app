@@ -11,7 +11,7 @@ function getCurrentDateTime() {
     "Friday",
     "Saturday",
   ];
-  let weather = document.querySelector(".todays-weather");
+  let weather = document.querySelector(".weather-forecast");
   let currentDateTimeElement = document.createElement("p");
   let currentTime = now.toLocaleString("en-US", {
     hour: "numeric",
@@ -22,7 +22,9 @@ function getCurrentDateTime() {
     `${days[now.getDay()]} ${currentTime}`
   );
   currentDateTimeElement.appendChild(currentDateTime);
-  let currentWeatherElement = document.querySelector(".current-temp");
+  let currentWeatherElement = document.querySelector(
+    ".current-weather-forecast"
+  );
   weather.insertBefore(currentDateTimeElement, currentWeatherElement);
   currentDateTimeElement.classList.add("date-time");
 }
